@@ -3,8 +3,10 @@ let qytet = document.getElementById('qytet')
 let kafsh = document.getElementById('kafsh')
 let emer = document.getElementById('emer')
 
-
-
+let shtetbtn = document.getElementById('shtet1')
+let qytetbtn = document.getElementById('qytet1')
+let kafshbtn = document.getElementById('kafsh1')
+let emerbtn = document.getElementById('emer1') 
 
 function makeid(length) {
   var result           = '';
@@ -17,18 +19,34 @@ charactersLength));
   return result;
 }
 
+  const showX = () => {
+    shtet.innerHTML = "Shtet :" + x;
+  }
+
+  const showH = () => {
+    qytet.innerHTML = "Qytet :" + h;
+  }
+
+  const showA = () => {
+    kafsh.innerHTML = "Kafsh : " + a;
+  }
+
+  const showB = () => {
+    emer.innerHTML = "Emer : " + b;
+  }
+
   let i = alert("Only use capital letters ")
 
   let y = makeid(1)
 
+  let x = prompt("find a country  that starts with " + y + ":")
 
+  let h = prompt("find a city  that starts with " + y + ":")
 
-  let x = prompt("find a country  that starts with " + y+ ":")
-  let h = prompt("find a city  that starts with " + y+ ":")
-  let a = prompt("find a animal  that starts with " + y+ ":")
-  let b = prompt("find a name  that starts with " + y+ ":")
-  
-  
+  let a = prompt("find a animal  that starts with " + y  + ":")
+
+  let b = prompt("find a name  that starts with " + y + ":")
+
 
   let x1 = x.split().join()
   if (x1[0]  == y) {
